@@ -40,9 +40,10 @@ class Program
                     }
                 }
             }
+            using (StreamReader sr = new StreamReader(filePathConfig))
 
-            // Display the contents of the bizUnits
-            foreach (DictionaryEntry entry in bizUnits)
+                // Display the contents of the bizUnits
+                foreach (DictionaryEntry entry in bizUnits)
             {
                 Console.WriteLine($"{entry.Key}: {entry.Value}");
             }
